@@ -12,20 +12,20 @@
   <header class="topbar"><button class="wordmark" id="home" aria-label="Return to start screen"><span class="crest">C</span> CASHILL DOWNS</button><div class="utilities"><span id="race-label">CASHILL DOWNS · KENTUCKY</span><button id="sound" class="icon-button" aria-label="Turn sound on" title="Sound">♫<span id="sound-state">OFF</span></button><button id="fullscreen" class="icon-button fullscreen" aria-label="Toggle fullscreen" title="Fullscreen">⛶</button></div></header>
   <section id="start-screen" class="screen active" aria-label="Start screen">
     <div class="start-shade"></div><div class="start-title"><p class="eyebrow"><span></span> A DAY AT THE RACES <span></span></p><h1>Cashill <i>Downs</i></h1><p class="intro">Five thoroughbreds. One finish line.</p></div>
-    <div class="start-action"><button class="primary" id="get-started">Get Started</button><p>Choose your champion. Feel the thunder.</p></div>
+    <div class="start-action"><button class="primary" id="get-started">Get Started</button><p>Meet the field. Feel the thunder.</p></div>
     <div class="start-footer"><span>CASHILL DOWNS</span><span class="mini-rule"></span><span>EST. 1924</span></div>
   </section>
-  <section id="select-screen" class="screen" aria-label="Horse selection" hidden>
-    <div class="selection-heading"><div><p class="eyebrow">THE PADDOCK <span class="thin-line"></span> RACE <span class="round-number">01</span></p><h2>Choose your champion.</h2><p class="muted">Every horse has a story. Which one will you back?</p></div><div class="conditions"><span class="weather-icon">☀</span><div><small>TODAY AT CASHILL DOWNS</small><strong id="condition-title">Fast & dry</strong><span>1,200 meters · 5 runners</span></div></div></div>
-    <div class="table-labels"><span>NO.</span><span>THE THOROUGHBREDS</span><span>RACING PROFILE</span><span>YOUR PICK</span></div>
-    <div id="horse-list" role="radiogroup" aria-label="Select a racehorse"></div>
-    <div class="selection-bottom"><div><span class="small-label">YOUR CHAMPION</span><strong id="your-champion">Midnight Run</strong><span class="selection-tip">Pick a horse, then watch the race unfold.</span></div><button class="primary" id="start-race">Start the Race</button></div>
+  <section id="select-screen" class="screen" aria-label="The field" hidden>
+    <div class="selection-heading"><div><p class="eyebrow">THE PADDOCK <span class="thin-line"></span> RACE <span class="round-number">01</span></p><h2>Meet the field.</h2><p class="muted">A fresh field of five every race.</p></div><div class="conditions"><span class="weather-icon">☀</span><div><small>TODAY AT CASHILL DOWNS</small><strong id="condition-title">Fast & dry</strong><span>1,200 meters · 5 runners</span></div></div></div>
+    <div class="table-labels"><span>NO.</span><span>THE THOROUGHBREDS</span><span>RACING PROFILE</span></div>
+    <div id="horse-list" role="list" aria-label="Today's runners"></div>
+    <div class="selection-bottom"><div><span class="small-label">POST TIME</span><strong>The field is set.</strong><span class="selection-tip">No picks, no bets. Just sit back and watch them run.</span></div><button class="primary" id="start-race">Start the Race</button></div>
   </section>
   <section id="race-screen" class="screen" aria-label="Live horse race" hidden>
     <canvas id="race-canvas" width="1920" height="1080" aria-label="Five horses racing to the right at Cashill Downs"></canvas>
     <div class="race-top"><div><p class="eyebrow">CASHILL DOWNS <span class="live-dot"></span> LIVE</p><h2>And they’re off.</h2><p id="race-condition">1,200 M · FAST & DRY</p></div><div class="distance"><small id="distance-label">TO THE FINISH</small><strong id="meters">1,200 <span>m</span></strong><div class="progress-track"><div id="progress-fill"></div></div></div></div>
     <div id="countdown" class="countdown" aria-live="assertive"></div>
-    <div class="race-bottom"><div class="watching"><small>YOUR CHAMPION</small><strong id="watching-name"></strong><span id="watching-place">Ready at the rail</span></div><div class="standings" id="standings" aria-label="Live standings"></div><button id="pause" class="secondary" aria-label="Pause race">Pause</button></div>
+    <div class="race-bottom"><div class="watching"><small>IN FRONT</small><strong id="watching-name"></strong><span id="watching-place">Ready at the rail</span></div><div class="standings" id="standings" aria-label="Live standings"></div><button id="pause" class="secondary" aria-label="Pause race">Pause</button></div>
   </section>
   <section id="win-screen" class="screen" aria-label="Race results" hidden>
     <div class="win-heading"><p class="eyebrow">THE OFFICIAL RESULT <span class="thin-line"></span> RACE <span class="round-number">01</span></p><h2 id="winner-title">Midnight Run wins.</h2><p id="winner-subtitle" class="muted"></p></div>
